@@ -1,6 +1,6 @@
 # Simple CMS Application Developed in CodeIgniter framework.
 
-Purpose' of developing this application is to maintaining another project's documentation.
+A purpose of developing this application is to write and maintain another project's documentation.
 
 
 ## Features
