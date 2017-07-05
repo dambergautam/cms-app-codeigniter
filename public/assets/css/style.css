@@ -1,0 +1,411 @@
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+}
+
+header, footer, section{
+    margin: 10px 20px;
+}
+
+footer{
+    
+    text-align: center;
+}
+
+
+/*
+ * Header
+ */
+.head-title{
+  margin:10px 0 10px 0;
+  float: left;
+  color: #aeb2b7;
+  font-weight: 600;
+}
+
+nav ul {
+  margin:10px 0 10px 0;
+}
+nav ul > li {
+  display: inline-block;
+}
+nav ul > li + li {
+  margin-left: 20px;
+}
+nav ul > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+  text-decoration: none;
+  
+}
+nav ul > li > a:hover,
+nav ul > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+  text-decoration: none;
+}
+nav ul > .active > a,
+nav ul > .active > a:hover,
+nav ul > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  
+  nav ul {
+    float: right;
+  }
+}
+
+
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  
+  footer {
+    bottom: 0;
+    text-align: center;
+  }
+  
+  /* Handle the widths */
+  
+  footer,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+
+
+/*
+*Form login 
+*
+*/
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.form-signin input{
+    margin-bottom: 5px;
+}
+
+/*
+ * Body Section
+ */
+section{
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: #0B0B61;
+    background: #EBEFDD; 
+}
+
+section a{
+    color: #b96404;
+}
+
+section a:hover{
+    text-decoration: none;
+}
+
+section.homepage{
+    margin-top: 30px;
+    
+}
+section.adminpage{
+    background-color: #F5DEB3;
+    background-color: rgb(41,57,73);
+}
+
+.table-caption{
+    color: white;
+    font-size: 18px;
+    background: #b96404;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.table tr td, 
+.table tr th{
+    border-color: #838383 !important;
+    border-width: 1px !important;
+}
+
+/** landing pages */
+.homepage .sidebar{
+    width: 100%;
+    background-color: rgb(245,245,245);
+    margin-top: 5px;
+    border: 1px solid #fff;
+}
+.homepage .sidebar #leftside-navigation ul li a {
+    color: #0B0B61;
+}
+.homepage .sidebar #leftside-navigation ul li {
+    border-bottom: 1px solid #dddddd;
+}
+.homepage .sidebar #leftside-navigation ul ul li {
+    background: #eee;
+}
+
+
+/** Admin sidebar menu **/
+#doc_pages{
+    
+}
+
+#doc_pages aside.sidebar{
+    position: relative;
+    border-radius: 4px;
+}
+
+#doc_pages .page_category ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#doc_pages .page_category ul li{
+    padding: 5px;
+}
+
+#doc_pages .page_content{
+    background-color: rgb(245,245,245);
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    min-height: 280px;
+}
+
+#doc_pages .no_docs_content{
+    text-align: center;
+    min-height: 150px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#doc_pages .no_docs_content span{
+    font-size: 36px;
+}
+
+.page-content{
+    
+}
+.page-breadcrumb{
+    margin-bottom:10px;
+    font-size: 12px;
+    line-height: 34px;
+}
+.page_content .page-heading{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.page_content .page-body{
+    margin-top: 10px;
+}
+.page_content .page-footer{
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+    border-top: 1px solid #aaa;
+    padding-top:10px;
+    text-align: right;
+}
+
+/**
+* Security issue title
+*/
+.alert-title{
+    font-weight: bold;
+}
+
+.alert-title:hover{
+    color:#0B0B61;
+}
+
+/*
+* Message
+*/
+.message{ 
+    font-size: 14px;
+    background: #eee;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.message .success_msg{
+    color:green;
+}
+.message .error_msg{
+    color: red;
+}
+
+
+/* Add alerts -Form */
+.add-alert {
+    margin: 10px 0 10px 0 !important; 
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+
+.add-alert-page .add-alerts-heading{
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.form-add-alerts .row{
+    margin: 6px 0 6px 0;
+}
+.form-add-alerts .row div:nth-child(1){
+    text-align: right;
+    padding-right: 50px;
+}
+
+.form-add-alerts .row div:nth-child(1) label{
+    color: red;
+    font-size: 16px;
+}
+
+.legend-left .row div:nth-child(1){
+    text-align: left;
+}
+/*
+* Image gallery
+*/
+
+#listgallery div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+#listgallery div.gallery:hover {
+    border: 1px solid #777;
+}
+
+#listgallery div.gallery img {
+    
+}
+
+#listgallery div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+/** Upload */
+#upload input[type="file"] {
+    display: none;
+}
+#upload .custom-file-upload {
+    border: 1px dotted  #838383;
+    display: inline-block;
+    padding: 6px 40px;
+    cursor: pointer;
+}
+
+/**Image delete icon */
+.image_delete{
+    position: absolute;
+    top: -5px;
+    text-align: right;
+    background-color: white;
+    padding: 0px 6px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 20px;
+    right: -5px;
+}
+.image_delete a:hover, .image_delete a:focus, .image_delete a:active{
+    color: red;
+}
+
+/** Breadcrumb **/
+.breadcrumb{
+    margin: 15px 20px;
+    text-align: center;
+    background-color: rgb(41, 57, 73);
+    border: 1px solid;
+}
+
+.breadcrumb > li + li::before{
+    content:" | ";
+    color: #aaaaaa;
+}
+
+.breadcrumb li a, .breadcrumb li a:focus{
+    color: #aeb2b7;
+    font-weight: 400;
+}
+
+.breadcrumb li a:hover, aside.sidebar a:hover{
+    color: #b96404 !important;
+}
+
+/* select 2 */
+.select2-results ul li{
+    color: #0B0B61;
+}
+
+/* Manage category */
+#manage_category .row{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#manage_category .row label{
+    color: red;
+    
+}
